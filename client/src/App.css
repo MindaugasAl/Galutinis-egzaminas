@@ -1,0 +1,84 @@
+.articles {
+  column-count: 3;
+  gap: 3rem;
+}
+
+.box {
+  margin-bottom: 2rem;  
+  break-inside: avoid-column;
+  border-bottom: 1px solid rgb(199, 199, 199); 
+  padding-bottom: .5rem;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box .image {
+  margin-bottom: .5rem;
+}
+
+.box .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.box .article-link {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.box .article-link h3 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.btn {
+  border-radius: 2px;
+  border: none;
+}
+
+.btn-primary {
+  background: rgb(196, 135, 5);
+}
+
+.btn-primary:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-danger {
+  background: rgb(220, 0, 0);
+}
+
+.btn-danger:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-success {
+  background: rgb(15, 140, 15);
+}
+
+.btn-success:hover {
+  background: rgb(0, 0, 0);
+}
+
+.nav-pills .nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+.nav-pills .nav-link:hover {
+  color:rgb(18, 113, 161);
+}
+
+.single-post .image {
+  height: 15rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 1rem 0 2rem;
+}

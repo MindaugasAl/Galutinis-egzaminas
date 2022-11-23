@@ -31,13 +31,13 @@ router.get('/:id', async (req, res) => {
             include: [
                 {
                     model: db.Users,
-                    attributes: { exclude: ['password', 'role', 'email', 'updatedAt'] }
+                    attributes: { exclude: ['password', 'role', 'email', 'updatedAt', 'category'] }
                 },
                 {
                     model: db.Comments,
                     include: {
                         model: db.Users,
-                        attributes: { exclude: ['password', 'role', 'email', 'updatedAt'] }
+                        attributes: { exclude: ['password', 'role', 'email', 'updatedAt', 'category'] }
                     }
                 }
             ],
@@ -69,6 +69,7 @@ router.get('/search/:keyword', async (req, res) => {
                 title: {
                     [Op.like]: '%' + req.params.keyword + '%'
                 }
+
             }
         })
         res.json(posts)

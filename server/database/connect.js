@@ -3,6 +3,7 @@ import mysql from 'mysql2/promise'
 import Posts from '../model/posts.js'
 import Users from '../model/users.js'
 import Comments from '../model/comments.js'
+import Orders from '../model/orders.js'
 
 const database = {}
 const credentials = {
@@ -26,6 +27,8 @@ try {
     database.Posts = Posts(sequelize)
     database.Users = Users(sequelize)
     database.Comments = Comments(sequelize)
+    database.Orders = Orders(sequelize)
+
 
     database.Users.hasMany(database.Posts, {
         onDelete: 'RESTRICT',
@@ -34,6 +37,7 @@ try {
     database.Posts.belongsTo(database.Users)
     database.Posts.hasMany(database.Comments)
     database.Comments.belongsTo(database.Users)
+    database.Orders.belongsTo(database.Users)
 
     await sequelize.sync({ alter: true })
 } catch (error) {

@@ -24,3 +24,4 @@ neprisijungęs vartotojas - gali matyti titulinį puslapį ir atskirus straipsni
 prisijungęs paprastas vartotojas - papildomai gali komentuoti knygas;
 prisijungęs paprastas vartotojas - gali įtraukti naujas knygas, ištrinti esamas, koreguoti visus knygų įrašus.
 
+#### aplikacijoje vizuliai daliai panaudota CSS Framework'as "Bootstrap"

@@ -14,7 +14,7 @@
 6. Abejuose terminaluose paleisti komandą "npm start" - tai paleis aplikacija 
 
 
-### aplikacijoje rasite:
+### Aplikacijoje rasite:
 Tris aplinkas:
 neprisijungusio vartotojo;
 prisijungusio paprastas vartotojo;
@@ -23,5 +23,11 @@ prisijungusio super vartotojo;
 neprisijungęs vartotojas - gali matyti titulinį puslapį ir atskirus straipsnius, tačiau negali atlikti jokių veiksmų;
 prisijungęs paprastas vartotojas - papildomai gali komentuoti knygas;
 prisijungęs paprastas vartotojas - gali įtraukti naujas knygas, ištrinti esamas, koreguoti visus knygų įrašus.
+
+Atliktos validacijos loginui, registrui, knygos įkėlimui, koregavimui
+Sukurti slapukai prisijungusiems vartotojams
+Nuotrukų upluod'as
+
+
 
 #### aplikacijoje vizuliai daliai panaudota CSS Framework'as "Bootstrap"
